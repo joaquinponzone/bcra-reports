@@ -3,7 +3,7 @@ import config from '../../../config/config.js'
 import { CSVtoJSON } from '../../../utils/helpers'
 
 export default async function endPointHandler(req, res) {
-  const { hipoteca: { url } } = config.BCRA_urls
+  const { pfijos: { url } } = config.BCRA_urls
   const { data } = await axios({ 
     url: url, 
     method: 'GET',
